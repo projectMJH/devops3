@@ -8,6 +8,6 @@ public class FoodController {
 	@GetMapping("/main")
 	public String main_page()
 	{
-		return "main"; 
+		return "main";
 	}
 }
