@@ -1,7 +1,8 @@
+
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org"
-  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-> 
+   xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+>
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
@@ -15,17 +16,17 @@
   width: 960px;
 }
 p{
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+   overflow: hidden;
+   white-space: nowrap;
+   text-overflow: ellipsis;
 }
 </style>
 </head>
 
 <body>
-  <th:block th:insert="~{main/header}"></th:block>
+  <th:block th:include="main/header"></th:block>
   <div class="container">
-    <th:block th:replace="~{${main_html}}"></th:block>
+    <th:block th:include="${main_html}"></th:block>
   </div>
 </body>
 </html>

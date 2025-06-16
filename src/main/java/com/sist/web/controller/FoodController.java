@@ -5,9 +5,5 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class FoodController {
-	@GetMapping("/main")
-	public String main_page()
-	{
-		return "main";
-	}
+
 }
